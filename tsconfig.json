@@ -9,5 +9,10 @@
     "baseUrl": "./src",
     "moduleResolution": "node",
     "outDir": "./dist"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.mts"
+  ]
 }
