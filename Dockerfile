@@ -1,5 +1,5 @@
 # dev stage
-FROM node:20 as base
+FROM node:20 AS base
 
 WORKDIR /home/node/app
 
@@ -10,7 +10,7 @@ RUN npm i
 COPY . .
 
 # production stage
-FROM base as production
+FROM base AS production
 
 ENV NODE_PATH=./dist
 
